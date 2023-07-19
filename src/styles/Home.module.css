@@ -1,0 +1,13 @@
+.header {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
