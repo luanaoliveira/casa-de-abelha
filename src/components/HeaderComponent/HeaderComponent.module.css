@@ -4,10 +4,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 8px 0;
 }
 
-.footer {
-    background-color: #fff;
-    color: #000;
-    text-align: center;
+.logo {
+    width: 20%;
+}
+
+.menu {
+    width: 8%;
+
 }
