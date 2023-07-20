@@ -7,7 +7,7 @@ export default function Contato() {
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
-      <h1>Contato</h1>
+      <h1>Quem Somos</h1>
     </main>
   )
 }
