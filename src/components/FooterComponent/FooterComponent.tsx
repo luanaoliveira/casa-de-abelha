@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import style from '../FooterComponent/FooterComponent.module.css'
 import logo from '../../assets/imagens/logo.svg'
 import instagram from '../../assets/imagens/instagram.svg'
 import facebook from '../../assets/imagens/facebook.svg'
@@ -7,15 +6,13 @@ import facebook from '../../assets/imagens/facebook.svg'
 
 export default function Footer() {
     return (
-        <footer className={style.footer}>
-            <Image className={style.logo} src={logo} alt='Imagem da logo'/>
+        <footer className="flex flex-col align-center">
+            <Image className="h-6 mb-1" src={logo} alt='Imagem da logo'/>
             <div >
-                <ul className={style.redes_sociais}>
-                    <li><a href="#"><Image className={style.facebook} src={facebook} alt='Ícone do facebook'/></a></li>
-                    <li><a href="#"><Image className={style.instagram} src={instagram} alt='Ícone do instagram'/></a></li>
+                <ul className="flex justify-center">
+                    <li><a href="#"><Image className="w-4 rounded-3xl m-0.5" src={facebook} alt='Ícone do facebook'/></a></li>
+                    <li><a href="#"><Image className="w-4 rounded-3xl m-0.5" src={instagram} alt='Ícone do instagram'/></a></li>
                 </ul>
-
-
             </div>
         </footer>
     )
