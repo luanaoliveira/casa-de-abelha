@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import { Header } from '@/components/HeaderComponent'
 import { Footer } from '@/components/FooterComponent'
+import { GetStaticProps } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 

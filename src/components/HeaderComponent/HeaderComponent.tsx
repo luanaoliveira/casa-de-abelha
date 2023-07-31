@@ -4,7 +4,7 @@ import menu from '../../assets/imagens/menu.svg'
 
 export default function Header() {
     return (
-        <header className="flex justify-between pt-2 pl-6 pr-6">
+        <header className="flex justify-between pt-4 px-6">
             <Image className="w-1/5" src={logo} alt="Imagem da logo"/>
             <Image className="w-1/8" src={menu} alt="Imagem menu"/>
         </header>

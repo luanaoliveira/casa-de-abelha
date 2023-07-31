@@ -9,7 +9,7 @@ export default function Footer() {
         <footer className="flex flex-col align-center">
             <Image className="h-6 mb-1" src={logo} alt='Imagem da logo'/>
             <div >
-                <ul className="flex justify-center">
+                <ul className="flex justify-center mb-2">
                     <li><a href="#"><Image className="w-4 rounded-3xl m-0.5" src={facebook} alt='Ícone do facebook'/></a></li>
                     <li><a href="#"><Image className="w-4 rounded-3xl m-0.5" src={instagram} alt='Ícone do instagram'/></a></li>
                 </ul>
