@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 .container {
   min-height: calc(100vh - 149px);
