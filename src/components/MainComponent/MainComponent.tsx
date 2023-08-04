@@ -10,22 +10,28 @@ const lato = Lato ({
 export default function Main() {
     return (
         <main className={`${lato.className} flex min-h-screen flex-col`}>
-            <div className='m-5'>
-                <div>
-                    <h1 className="text-center text-xl p-3" >Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                    <Image  src={pessoas} alt='Imagem da logo'/>
+            <div>
+                <div className='bg-background bg-no-repeat bg-cover text-white py-12'>
+                    <h1 className="text-center text-4xl" >Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
                 </div>
                 <div className='py-5'>
-                    <p className='text-center text-base'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    <p className='text-center text-base mx-8'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     Necessitatibus nulla fugiat nostrum delectus odit impedit? Provident,
                     ipsum voluptatibus rerum voluptate maxime, dolore ducimus dicta magnam, 
                     modi atque quos maiores ex.</p>
                 </div>
                 <div>
                     <ul className='flex flex-col justify-center items-center my-4'>
-                        <li className='w-60 h-40 bg-gray-200 rounded-3xl text-center my-4 p-2'>Missão</li>
-                        <li className='w-60 h-40 bg-gray-200 rounded-3xl text-center my-4 p-2'>Visão</li>
-                        <li className='w-60 h-40 bg-gray-200 rounded-3xl text-center my-4 p-2'>Valores</li>
+                        <li className='w-60 h-40 bg-gray-200 hover:bg-gray-300 rounded-3xl text-center my-4 p-2'>
+                            Missão
+                            <p className='m-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas amet consequatur ipsam!</p></li>
+                        <li className='w-60 h-40 bg-gray-200 hover:bg-gray-300 rounded-3xl text-center my-4 p-2'>
+                            Visão
+                            <p className='m-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas amet consequatur ipsam!</p></li>
+                        <li className='w-60 h-40 bg-gray-200  hover:bg-gray-300 rounded-3xl text-center my-4 p-2'>
+                            Valores
+                            <p className='m-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas amet consequatur ipsam!</p>
+                            </li>
                     </ul>
                 </div>
 
