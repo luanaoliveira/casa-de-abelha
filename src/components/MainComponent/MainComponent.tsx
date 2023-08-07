@@ -1,6 +1,4 @@
 import { Lato } from 'next/font/google'
-import Image from "next/image"
-import pessoas from "../../assets/imagens/pessoas.svg"
 
 const lato = Lato ({
     subsets: ['latin'],
