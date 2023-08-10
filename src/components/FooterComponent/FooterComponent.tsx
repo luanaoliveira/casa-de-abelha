@@ -11,17 +11,17 @@ const lato = Lato ({
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col items-center">
-            <Image className="h-6 mb-1" src={logo} alt='Imagem da logo'/>
+        <footer className="flex flex-col bg-gray-200">
+            <Image className="w-20 m-3" src={logo} alt='Imagem da logo'/>
             <div >
-                <ul className="flex justify-center">
-                    <li><a href="#"><Image className="w-4 rounded-3xl m-0.5" src={facebook} alt='Ícone do facebook'/></a></li>
-                    <li><a href="#"><Image className="w-4 rounded-3xl m-0.5" src={instagram} alt='Ícone do instagram'/></a></li>
+                <ul className="flex ml-3">
+                    <li><a href="#"><Image className="w-7 rounded-3xl m-0.5" src={facebook} alt='Ícone do facebook'/></a></li>
+                    <li><a href="#"><Image className="w-7 rounded-3xl m-0.5" src={instagram} alt='Ícone do instagram'/></a></li>
                 </ul>
             </div>
             <hr />
             <div>
-                <p className={`${lato.className} text-xs py-2`}>Copyright &copy; Casa de Abelha </p>
+                <p className={`${lato.className} ml-3 mt-3 text-xs py-2`}>Copyright &copy; Casa de Abelha </p>
             </div>
         </footer>
     )
