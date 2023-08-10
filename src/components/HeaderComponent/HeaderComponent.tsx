@@ -4,9 +4,9 @@ import menu from '../../assets/imagens/menu.svg'
 import close from '../../assets/imagens/close.svg'
 import { useState } from 'react'
 
-interface HeaderProps { quemSomosTopDistance: number | undefined,  missaoTopDistance: number | undefined, visaoTopDistance: number | undefined, valoresTopDistance: number | undefined, apoiadoresTopDistance: number | undefined, contatoTopDistance: number | undefined}
+interface HeaderProps { quemSomosTopDistance: number | undefined,  missaoTopDistance: number | undefined, visaoTopDistance: number | undefined, valoresTopDistance: number | undefined, contatoTopDistance: number | undefined}
 
-export default function Header({ quemSomosTopDistance, missaoTopDistance, visaoTopDistance, valoresTopDistance, apoiadoresTopDistance, contatoTopDistance }: HeaderProps) {
+export default function Header({ quemSomosTopDistance, missaoTopDistance, visaoTopDistance, valoresTopDistance, contatoTopDistance }: HeaderProps) {
     const [openMenu, setOpenMenu] = useState(false)
 
     const quemSomosClickHandler = (_topDistance?: number) => {
@@ -34,14 +34,6 @@ export default function Header({ quemSomosTopDistance, missaoTopDistance, visaoT
     }
 
     const valoresClickHandler = (_topDistance?: number) => {
-        _topDistance && window.scrollTo({
-            top: _topDistance,
-            left: 0,
-            behavior: "smooth"
-          })
-    }
-
-    const apoiadoresClickHandler = (_topDistance?: number) => {
         _topDistance && window.scrollTo({
             top: _topDistance,
             left: 0,
@@ -84,7 +76,6 @@ export default function Header({ quemSomosTopDistance, missaoTopDistance, visaoT
                         <li className='my-1' onClick={() => missaoClickHandler(missaoTopDistance)}>Missão</li>
                         <li className='my-1' onClick={() => visaoClickHandler(visaoTopDistance)}>Visão</li>
                         <li className='my-1' onClick={() => valoresClickHandler(valoresTopDistance)}>Valores</li>
-                        <li className='my-1' onClick={() => apoiadoresClickHandler(apoiadoresTopDistance)}>Apoiadores</li>
                         <li className='my-1' onClick={() => contatoClickHandler(contatoTopDistance)}>Contato</li>
                     </ul>
                 </div>

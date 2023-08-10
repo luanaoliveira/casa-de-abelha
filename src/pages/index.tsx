@@ -44,15 +44,6 @@ const valoresRef = useRef<HTMLLIElement>(null)
     }
 }, [])
 
-const apoiadoresRef = useRef<HTMLLIElement>(null)
-  const [apoiadoresTop, setApoiadoresTop] = useState<number | undefined>()
-
-  useEffect(() => {
-    if(apoiadoresRef.current?.offsetTop) {
-      setApoiadoresTop(apoiadoresRef.current?.offsetTop)
-    }
-}, [])
-
 const contatoRef = useRef<HTMLLIElement>(null)
   const [contatoTop, setContatoTop] = useState<number | undefined>()
 
@@ -65,8 +56,8 @@ const contatoRef = useRef<HTMLLIElement>(null)
 
   return (
     <>
-    <Header quemSomosTopDistance={Number(quemSomosTop) + 210} missaoTopDistance={Number(missaoTop) + 210} visaoTopDistance={Number(visaoTop) + 210} valoresTopDistance={Number(valoresTop) + 210} apoiadoresTopDistance={Number(apoiadoresTop) + 210} contatoTopDistance={Number(contatoTop) + 210} />
-    <Main quemSomosRef={quemSomosRef} missaoRef={missaoRef} visaoRef={visaoRef} valoresRef={valoresRef} apoiadoresRef={apoiadoresRef} contatoRef={contatoRef}/>
+    <Header quemSomosTopDistance={Number(quemSomosTop) + 210} missaoTopDistance={Number(missaoTop) + 210} visaoTopDistance={Number(visaoTop) + 210} valoresTopDistance={Number(valoresTop) + 210} contatoTopDistance={Number(contatoTop) + 210} />
+    <Main quemSomosRef={quemSomosRef} missaoRef={missaoRef} visaoRef={visaoRef} valoresRef={valoresRef} contatoRef={contatoRef}/>
     <Footer/>
     </>
   )
