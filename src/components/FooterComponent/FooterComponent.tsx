@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import logo from '../../assets/imagens/logo.svg'
+import logo_footer from '@/assets/imagens/logo-f.svg'
 import instagram from '../../assets/imagens/instagram.svg'
 import facebook from '../../assets/imagens/facebook.svg'
 import { Lato } from 'next/font/google'
@@ -12,7 +12,7 @@ const lato = Lato ({
 export default function Footer() {
     return (
         <footer className="flex flex-col text-white bg-red-600">
-            <Image className="w-20 m-3" src={logo} alt='Imagem da logo'/>
+            <Image className="w-32 m-3" src={logo_footer} alt='Imagem da logo'/>
             <div >
                 <ul className="flex ml-3">
                     <li><a href="#"><Image className="w-8 m-0.5" src={facebook} alt='Ícone do facebook'/></a></li>

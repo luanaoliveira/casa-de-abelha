@@ -56,7 +56,7 @@ const contatoRef = useRef<HTMLLIElement>(null)
 
   return (
     <>
-    <Header quemSomosTopDistance={Number(quemSomosTop) + 210} missaoTopDistance={Number(missaoTop) + 210} visaoTopDistance={Number(visaoTop) + 210} valoresTopDistance={Number(valoresTop) + 210} contatoTopDistance={Number(contatoTop) + 210} />
+    <Header quemSomosTopDistance={Number(quemSomosTop) + 178} missaoTopDistance={Number(missaoTop) + 178} visaoTopDistance={Number(visaoTop) + 178} valoresTopDistance={Number(valoresTop) + 178} contatoTopDistance={Number(contatoTop) + 178} />
     <Main quemSomosRef={quemSomosRef} missaoRef={missaoRef} visaoRef={visaoRef} valoresRef={valoresRef} contatoRef={contatoRef}/>
     <Footer/>
     </>
