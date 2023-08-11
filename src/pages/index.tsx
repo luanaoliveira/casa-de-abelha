@@ -44,7 +44,7 @@ const valoresRef = useRef<HTMLLIElement>(null)
     }
 }, [])
 
-const contatoRef = useRef<HTMLLIElement>(null)
+const contatoRef = useRef<HTMLDivElement>(null)
   const [contatoTop, setContatoTop] = useState<number | undefined>()
 
   useEffect(() => {
