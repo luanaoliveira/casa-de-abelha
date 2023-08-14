@@ -41,32 +41,39 @@ export default function Main(props: MainProps) {
                     }}
                     className={`${chau_philomene_one.className} text-center text-white text-4xl font-bold shadow-md px-2 uppercase relative z-20 `} >Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
                 </div>
-                <div className='pt-8' ref={quemSomosRef} id='quem-somos'>
-                    <p className='text-center text-base mx-3'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Necessitatibus nulla fugiat nostrum delectus odit impedit? Provident,
-                    ipsum voluptatibus rerum voluptate maxime, dolore ducimus dicta magnam, 
-                    modi atque quos maiores ex.</p>
+                <div className='' ref={quemSomosRef} id='quem-somos'>
+                    <p className='text-left text-base py-12 px-6'>
+                        O Instituto Casa de Abelhas é uma iniciativa sem fins lucrativos sediada em Juazeiro, na Bahia.
+                        O instituto tem como base projetos integrados de forma sustentável e adaptados às particularidades 
+                        culturais e sociogeográficas da região, e surge  a partir da compreensão de que organização, formação, 
+                        produção e geração de renda são pilares da estruturação do campo e da cidade.</p>
                 </div>
                 <div>
-                    <ul className='flex flex-col justify-center items-center my-4 pb-6'>
-                        <li id='missao' ref={missaoRef} className='w-full text-center my-4 p-2'>
-                            <p className={`${baloo_tambi_2.className} text-xl text-red-600 uppercase`}>Missão</p>
-                            <p  className='m-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                             Magnam placeat architecto explicabo eligendi non voluptate. Nisi aliquam magni ad, 
-                             ipsa et repellat sit facilis autem possimus qui nam optio quibusdam.</p>
-                             </li>
-                        <li id='visao' ref={visaoRef} className='w-full text-center my-4 p-2'>
-                            <p className={`${baloo_tambi_2.className} text-xl text-red-600 uppercase`}>Visão</p>
-                            <p className='m-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Accusantium quasi quam aliquam fugiat expedita. Esse distinctio exercitationem nesciunt molestiae, 
-                            enim consequuntur ipsam modi dicta aliquam ducimus nobis corporis incidunt repellat?</p>
-                            </li>
-                        <li id='valores' ref={valoresRef}  className='w-full text-center my-4 p-2'>
-                            <p className={`${baloo_tambi_2.className} text-xl text-red-600 uppercase`}>Valores</p>
-                            <p className='m-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Vero exercitationem recusandae sequi deserunt expedita nobis, veritatis cumque quisquam iste,
-                             debitis, voluptates veniam consectetur numquam itaque inventore voluptatem! Maxime, ipsam culpa!</p>
-                            </li>
+                    <ul className='flex flex-col justify-center items-center text-center'>
+                        <li id='missao' ref={missaoRef} className='w-full'>
+                            <p className={`${baloo_tambi_2.className} text-xl text-red-600 uppercase mb-2`}>Missão</p>
+                            <p  className='text-left px-6'>
+                                Fortalecer o desenvolvimento sustentável por meio da participação ativa das comunidades 
+                                em ações sociais, políticas, educacionais, esportivas, culturais e ambientais. Visando a
+                                saúde integral, holística e formação política das pessoas, impulsionando um progresso 
+                                sustentável baseado em equidade social e valores culturais.
+                            </p>
+                        </li>
+                        <li id='visao' ref={visaoRef} className='w-full py-12'>
+                            <p className={`${baloo_tambi_2.className} text-xl text-center text-red-600 uppercase mb-2`}>Visão</p>
+                            <p className='text-left px-6'>
+                                Executar ações que promovam uma abordagem ecossistêmica sobre a relação entre
+                                as pessoas e seus territórios, empoderando comunidades na construção de uma sociedade mais justa,
+                                saudável, solidária e participativa, valorando e valorizando os saberes na construção do Bem Viver.
+                             </p>
+                        </li>
+                        <li id='valores' ref={valoresRef}  className='w-full pb-12'>
+                            <p className={`${baloo_tambi_2.className} text-xl text-center text-red-600 uppercase mb-2`}>Valores</p>
+                            <p className='text-left px-6'>
+                                Respeito à diversidade, acolhimento, cuidado com o meio ambiente, construção colaborativa, 
+                                inclusão, solidariedade, Gestão compartilhada e transparente.
+                            </p>
+                        </li>
                     </ul>
                 </div>
             </div>

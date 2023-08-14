@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
-  min-height: calc(100vh - 149px);
+* {
+ 
 }

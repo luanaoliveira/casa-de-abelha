@@ -55,11 +55,14 @@ const contatoRef = useRef<HTMLDivElement>(null)
 
 
   return (
-    <>
-    <Header quemSomosTopDistance={Number(quemSomosTop) + 178} missaoTopDistance={Number(missaoTop) + 178} visaoTopDistance={Number(visaoTop) + 178} valoresTopDistance={Number(valoresTop) + 178} contatoTopDistance={Number(contatoTop) + 178} />
-    <Main quemSomosRef={quemSomosRef} missaoRef={missaoRef} visaoRef={visaoRef} valoresRef={valoresRef} contatoRef={contatoRef}/>
-    <Footer/>
-    </>
+    <div className='flex justify-center'>
+      <div className='max-w-3xl'>
+        <Header quemSomosTopDistance={Number(quemSomosTop) + 178} missaoTopDistance={Number(missaoTop) + 178} visaoTopDistance={Number(visaoTop) + 178} valoresTopDistance={Number(valoresTop) + 178} contatoTopDistance={Number(contatoTop) + 178} />
+        <Main quemSomosRef={quemSomosRef} missaoRef={missaoRef} visaoRef={visaoRef} valoresRef={valoresRef} contatoRef={contatoRef}/>
+        <Footer/>
+      </div>
+
+    </div>
   )
 }
 

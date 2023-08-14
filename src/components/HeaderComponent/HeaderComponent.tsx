@@ -50,7 +50,7 @@ export default function Header({ quemSomosTopDistance, missaoTopDistance, visaoT
     return (
         <>
             <header >
-                <div className='flex justify-between px-6 py-2 bg-white z-20 relative'>
+                <div className='w-full flex justify-between px-6 py-2 bg-white z-20 relative'>
                     <Image className="w-28" src={logo_header} alt="Imagem da logo"/>    
                     <button className="relative group" onClick={() => setOpenMenu(!openMenu)} >
                     <div className={`relative flex flex-col overflow-hidden items-center justify-center rounded-3xl w-[40px] h-[40px] transform transition-all bg-red-600 ring-0 gray-300 ring-opacity-30 duration-200 shadow-md`}>
